@@ -11,6 +11,17 @@ public abstract class Game {
     protected int numOfCards4Player;
     protected int numOfCardsDealtPerRound = 1;//developer can override this value in his class
 
+    protected DealingRuleStrategy dealingRuleStrategy;
+    protected ScoringStrategy scoringStrategy;
+
+    public void setDealingRuleStrategy(DealingRuleStrategy dealingRuleStrategy) {
+        this.dealingRuleStrategy = dealingRuleStrategy;
+    }
+
+    public void setScoringStrategy(ScoringStrategy scoringStrategy) {
+        this.scoringStrategy = scoringStrategy;
+    }
+
     protected Game() {
     }
 
@@ -98,21 +109,9 @@ public abstract class Game {
     }
 
     protected void dealingCardsToPlayers() {
-        //give the developer a way to set the num of cards per deal
-        numOfCards4Player = getNumOfCards();
-        int numOfDealingRounds = numOfCards4Player / numOfCardsDealtPerRound;
-        for (int i = 0; i < numOfDealingRounds; i++) {
-            for (UnoPlayer player : myPlayers.getPlayers()) {
-                for (int j = 0; j < numOfCardsDealtPerRound; j++) {
-                    player.addCard(this.myUnoDeck.drawCard());
-                }
-            }
-        }
-        int remainingCards = numOfCards4Player % numOfCardsDealtPerRound;
-        for (int i = 0; i < remainingCards; i++) {
-            for (UnoPlayer player : myPlayers.getPlayers()) {
-                player.addCard(this.myUnoDeck.drawCard());
-            }
+        if (dealingRuleStrategy != null) {
+            numOfCards4Player = getNumOfCards();
+            dealingRuleStrategy.applyDealingRule(myUnoDeck, myPlayers, numOfCards4Player, numOfCardsDealtPerRound);
         }
     }
 

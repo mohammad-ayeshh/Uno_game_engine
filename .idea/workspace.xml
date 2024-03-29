@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44239c98-4edf-42c6-b9bd-06fd5f1ae674" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uno_Game_Engine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyPlayers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyUnoDeck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyUnoGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyUnoPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnoCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnoDeck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnoHand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnoPlayer.java" afterDir="false" />
+    <list default="true" id="44239c98-4edf-42c6-b9bd-06fd5f1ae674" name="Changes" comment="v1">
+      <change afterPath="$PROJECT_DIR$/src/DealingRuleStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DefaultDealingRuleStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DefaultScoringStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ScoringStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,22 +20,30 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="hotFix" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Game.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/MyUnoGame.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2aLUNWfhAmwuEY1ZCiIR5UtT9Ig" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -74,6 +70,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GameDriver" />
+        <item itemvalue="Application.GameDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +83,42 @@
       <option name="presentableId" value="Default" />
       <updated>1704097315776</updated>
     </task>
+    <task id="LOCAL-00001" summary="v1">
+      <created>1704907790816</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704907790816</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="hotFix" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
